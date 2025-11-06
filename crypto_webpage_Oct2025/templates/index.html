@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Price Tracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Crypto Price Tracker</h1>
+            <p>Tracking 25 cryptocurrencies • Updates every 15 minutes</p>
+            <div class="stats">
+                <span id="lastUpdate">Loading...</span> • 
+                <span id="coinCount">25 coins</span>
+            </div>
+        </div>
+        
+        <div class="coins-grid" id="coinsGrid"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
